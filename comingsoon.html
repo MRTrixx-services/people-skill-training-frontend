@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People Skill Training - Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+        }
+        .container {
+            max-width: 800px;
+            padding: 20px;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .countdown {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+        }
+        .countdown div {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            min-width: 80px;
+        }
+        .countdown span {
+            display: block;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+        .countdown label {
+            font-size: 1em;
+            text-transform: uppercase;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @media (max-width: 600px) {
+            h1 { font-size: 2em; }
+            .countdown { flex-wrap: wrap; gap: 10px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>People Skill Training is Coming Soon!</h1>
+        <p>Unlock your potential with our webinar-based LMS platform. Dive into live sessions and recorded webinars on people skills, professional development, and more. Stay tuned for interactive learning experiences tailored for growth.</p>
+        <div class="countdown">
+            <div>
+                <span id="days">00</span>
+                <label>Days</label>
+            </div>
+            <div>
+                <span id="hours">00</span>
+                <label>Hours</label>
+            </div>
+            <div>
+                <span id="minutes">00</span>
+                <label>Minutes</label>
+            </div>
+            <div>
+                <span id="seconds">00</span>
+                <label>Seconds</label>
+            </div>
+        </div>
+    </div>
+    <script>
+        // Countdown logic
+        const countdownDate = new Date("September 20, 2025 23:59:00").getTime(); // Set your launch date here
+        const updateCountdown = () => {
+            const now = new Date().getTime();
+            const distance = countdownDate - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("days").innerText = days < 10 ? "0" + days : days;
+            document.getElementById("hours").innerText = hours < 10 ? "0" + hours : hours;
+            document.getElementById("minutes").innerText = minutes < 10 ? "0" + minutes : minutes;
+            document.getElementById("seconds").innerText = seconds < 10 ? "0" + seconds : seconds;
+            if (distance < 0) {
+                clearInterval(interval);
+                document.querySelector(".countdown").innerHTML = "<h2>We're Live!</h2>";
+            }
+        };
+        const interval = setInterval(updateCountdown, 1000);
+        updateCountdown(); // Initial call
+    </script>
+</body>
+</html>

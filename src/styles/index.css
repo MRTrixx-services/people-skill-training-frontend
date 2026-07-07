@@ -1,0 +1,79 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Inter;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: normal;
+  font-family: inherit;
+  margin: unset;
+}
+/* Custom Quill Editor Styles */
+.custom-quill .ql-editor {
+  min-height: 180px;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 16px;
+}
+
+.custom-quill .ql-editor.ql-blank::before {
+  color: var(--color-text-secondary);
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.custom-quill .ql-toolbar {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid var(--color-border);
+  padding: 8px 16px;
+  background: var(--color-background);
+  border-radius: 8px 8px 0 0;
+}
+
+.custom-quill .ql-container {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-radius: 0 0 8px 8px;
+}
+
+.custom-quill.quill-error .ql-toolbar {
+  border-bottom-color: var(--color-error);
+}
+
+.custom-quill.quill-error .ql-container {
+  border-color: var(--color-error);
+}
+
+.custom-quill .ql-toolbar .ql-formats {
+  margin-right: 15px;
+}
+
+.custom-quill .ql-toolbar button {
+  padding: 4px 6px;
+  margin: 0 1px;
+}
+
+.custom-quill .ql-toolbar button:hover {
+  color: var(--color-primary);
+}
+
+.custom-quill .ql-toolbar .ql-active {
+  color: var(--color-primary) !important;
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  .custom-quill .ql-toolbar {
+    background: var(--color-card);
+  }
+  
+  .custom-quill .ql-editor {
+    background: var(--color-card);
+    color: var(--color-foreground);
+  }
+}
