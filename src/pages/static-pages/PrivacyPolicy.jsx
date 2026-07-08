@@ -276,7 +276,7 @@ export default function PrivacyPolicy() {
                   </p>
                   <p className="text-sm font-semibold text-green-700">📧 support@peopleskilltraining.com</p>
                   <p className="text-sm text-gray-600">🌐 https://www.peopleskilltraining.com</p>
-                  <p className="text-sm text-gray-600">📍 375 Redondo Ave #1199, Long Beach, CA 90814, United States</p>
+                  {/* <p className="text-sm text-gray-600">📍 375 Redondo Ave #1199, Long Beach, CA 90814, United States</p> */}
                 </div>
               </div>
             </motion.section>

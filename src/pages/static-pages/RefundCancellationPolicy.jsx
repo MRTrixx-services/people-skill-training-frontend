@@ -257,7 +257,7 @@ export default function RefundCancellationPolicy() {
                         </a>
                       </li>
                       <li>🌐 <strong>Website:</strong> https://www.peopleskilltraining.com</li>
-                      <li>📍 <strong>Address:</strong> 375 Redondo Ave #1199, Long Beach, CA 90814, United States</li>
+                      {/* <li>📍 <strong>Address:</strong> 375 Redondo Ave #1199, Long Beach, CA 90814, United States</li> */}
                     </ul>
                   </div>
                 </div>

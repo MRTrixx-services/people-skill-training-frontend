@@ -110,22 +110,22 @@ const Footer = () => {
               <div>
                 <div className="text-sm font-semibold text-[#f5f9ff] mb-1">Email Support</div>
                 <a href="mailto:support@peopleskilltrain.com" className="text-sm text-[#d9ecff] hover:text-white transition-colors break-all">
-                  support@peopleskilltrain.com
+                  support@peopleskilltraining.com
                 </a>
               </div>
             </div>
             
             <div className="flex items-start gap-4 p-4 rounded-xl bg-[#064ad4]/30 backdrop-blur-sm border border-[#d9ecff]/20 hover:border-[#d9ecff]/50 transition-all duration-300">
-              <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#004b8d] to-[#0078d4] flex items-center justify-center flex-shrink-0">
+              {/* <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#004b8d] to-[#0078d4] flex items-center justify-center flex-shrink-0">
                 <Icon name="MapPin" size={20} className="text-white" />
-              </div>
+              </div> */}
               <div>
-                <div className="text-sm font-semibold text-[#f5f9ff] mb-1">Our Location</div>
-                <div className="text-sm text-[#d9ecff] leading-relaxed">
+                {/* <div className="text-sm font-semibold text-[#f5f9ff] mb-1">Our Location</div> */}
+                {/* <div className="text-sm text-[#d9ecff] leading-relaxed">
                   375 Redondo Ave # 1199<br />
                   Long Beach, CA 90814<br />
                   United States
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

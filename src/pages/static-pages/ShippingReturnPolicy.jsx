@@ -90,7 +90,7 @@ export default function ShippingReturnPolicy() {
       items: [
         '📧 Email: support@peopleskilltraining.com',
         '🌐 Website: https://www.peopleskilltraining.com',
-        '📍 Address: 375 Redondo Ave #1199, Long Beach, CA 90814, United States',
+        // '📍 Address: 375 Redondo Ave #1199, Long Beach, CA 90814, United States',
       ],
     },
   ];
