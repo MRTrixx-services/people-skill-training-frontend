@@ -14,7 +14,7 @@ const protocolAndHostname = protocol + "//" + hostname;
 // export const API_BASE_URL = 'http://159.65.151.72/api';
 // export const API_BASE_URL = 'https://api.compliancetrained.com/api';
 // export const API_BASE_URL = 'http://127.0.0.1:8000/api';
-export const API_BASE_URL = 'http://localhost:8000/api';
+export const API_BASE_URL = 'https://api.peopleskilltraining.com/api';
 // export const API_BASE_URL = 'http://68.183.48.69:8002/api';
 // ✅ Platform API Key
 export const PLATFORM_API_KEY = 'pk_7IM_53yXmcAGQ0Cworwqjupcw9s6Sa7ENck2bk9yNe4';
