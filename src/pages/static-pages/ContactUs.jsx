@@ -200,7 +200,7 @@ const ContactUs = () => {
                     </div> */}
 
                     {/* Location */}
-                    <div className="flex items-start space-x-3 sm:space-x-4 p-3 sm:p-4 bg-teal-50 rounded-lg">
+                    {/* <div className="flex items-start space-x-3 sm:space-x-4 p-3 sm:p-4 bg-teal-50 rounded-lg">
                       <div className="w-10 h-10 sm:w-12 sm:h-12 bg-teal-600 rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
                         <Icon name="MapPin" size={16} className="sm:w-5 sm:h-5 text-white" />
                       </div>
@@ -210,11 +210,10 @@ const ContactUs = () => {
                           375 Redondo Ave # 1199<br />
                           Long Beach, CA 90814<br />
                           United States
-                          {/* 2/24, East Street,Thirumazhapadi(PO)<br />
-               Ariyalur (DT),Tamilnadu-621851<br /> */}
+                         
                         </p>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
